@@ -1,17 +1,16 @@
 import java.util.Scanner;
 
-public class VerificacaoServico {
+public class VerificaServico {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         // Lê o nome do serviço a ser verificado
         System.out.print("Digite o nome do serviço a ser verificado (movel, fixa, banda larga ou tv): ");
-        String servicoVerificar = scanner.nextLine().trim();
+        String servicoVerificar = scanner.nextLine();
 
         // Lê o nome do cliente e os serviços contratados
         System.out.print("Digite o nome do cliente seguido pelos serviços contratados (exemplo: Alice,movel,fixa): ");
-        String entradaCliente = scanner.nextLine().trim();
+        String entradaCliente = scanner.nextLine();
 
         // Divide a entrada do cliente em partes separadas por vírgula
         String[] partesEntrada = entradaCliente.split(",");
